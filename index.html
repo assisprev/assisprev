@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tarjeta de presentación para empleados con diseño responsivo y accesible.">
+    <title>Tarjeta de Presentación</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Tarjeta */
+        .tarjeta-presentacion {
+            max-width: 400px;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Barra superior */
+        .barra-superior {
+            background-color: #eee; 
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .barra-superior img {
+            height: 65px; /* Tamaño del logo */
+        }
+
+        /* Logo de la empresa centrado */
+        .logo-empresa {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 180px;
+            background-color: #fff;
+            border-radius: 0 0 50% 50%;
+            overflow: hidden;
+        }
+
+        .logo-empresa img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Foto de perfil */
+        .header img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            object-fit: cover;
+            margin-top: -60px;
+            background-color: #f5f5f5;
+        }
+
+        /* Contenido principal */
+        .contenido {
+            padding: 20px;
+        }
+
+        .contenido h1 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .contenido h2 {
+            font-size: 16px;
+            color: #666;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .contenido p {
+            font-size: 14px;
+            color: #777;
+            margin: 5px 0;
+        }
+
+        /* Botones de contacto */
+        .botones-contacto {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        .botones-contacto a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #ff6600;
+            border-radius: 50%;
+            font-size: 20px;
+            text-decoration: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            color: #fff;
+        }
+
+        .botones-contacto a img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        /* Botón "Guardar Contacto" */
+        .guardar-contacto {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            margin: 20px auto 10px;
+            display: inline-block;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Botón "Compartir" */
+        .boton-compartir {
+            display: block;
+            color: #555;
+            text-align: center;
+            font-size: 16px;
+            text-decoration: none;
+            margin: 10px 0 20px;
+        }
+
+        .boton-compartir img {
+            width: 18px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        /* Footer de navegación */
+        footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            background-color: #eee;
+            border-top: 1px solid #ddd;
+        }
+
+        footer div {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+        }
+
+        footer img {
+            width: 20px;
+            display: block;
+            margin: 0 auto 5px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Responsividad */
+        @media (max-width: 500px) {
+            .tarjeta-presentacion {
+                margin: 10px;
+            }
+
+            .logo-empresa {
+                height: 150px;
+            }
+
+            .header img {
+                width: 100px; /* Ajusta la imagen del perfil */
+                height: 100px;
+            }
+
+            .contenido h1 {
+                font-size: 20px;
+            }
+
+            .contenido h2 {
+                font-size: 14px;
+            }
+
+            .contenido p {
+                font-size: 12px;
+            }
+
+            .botones-contacto a {
+                width: 50px;
+                height: 50px;
+            }
+
+            .botones-contacto a img {
+                width: 25px;
+                height: 25px;
+            }
+
+            .guardar-contacto {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .boton-compartir {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="tarjeta-presentacion">
+        <header class="barra-superior">
+            <img src="https://www.assisprev.com.ec/wp-content/uploads/2023/03/LogoAssisPrevLatam2.png" alt="Logo de la Empresa">
+        </header>
+
+        <section class="logo-empresa">
+            <img src="https://img.freepik.com/foto-gratis/arreglo-bodegon-navideno-espacio-copia_23-2149174207.jpg" alt="Imagen de fondo empresarial">
+        </section>
+
+        <section class="header">
+            <img src="https://via.placeholder.com/120" alt="Foto del empleado">
+        </section>
+
+        <section class="contenido">
+            <h1>Nombre del empleado</h1>
+            <h2>Puesto del empleado</h2>
+            <p>
+                <img src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/32/external-delivery-pin-for-parcel-delivery-location-making-delivery-tritone-tal-revivo.png" 
+                     alt="Ubicación" style="vertical-align: middle; margin-right: 5px;">
+                Ubicación del empleado
+            </p>
+
+            <div class="botones-contacto">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/ios/50/FFFFFF/whatsapp--v1.png" alt="WhatsApp">
+                </a>
+                <a href="#">
+                    <img src="https://img.icons8.com/ios/50/FFFFFF/phone.png" alt="Llamar">
+                </a>
+                <a href="#">
+                    <img src="https://img.icons8.com/ios/50/FFFFFF/mail.png" alt="Correo">
+                </a>
+                <a href="#">
+                    <img src="https://img.icons8.com/wired/64/FFFFFF/cell-phone.png" alt="Móvil">
+                </a>
+            </div>
+
+            <!-- Botón "Guardar contacto" con la funcionalidad añadida -->
+            <a href="#" class="guardar-contacto" id="guardarContacto">Guardar contacto</a>
+
+            <!-- Botón "Compartir" con funcionalidad de WhatsApp -->
+            <a href="#" class="boton-compartir" id="compartirWhatsapp">
+                <img src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/external-share-multimedia-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png" alt="Compartir"> Compartir
+            </a>
+        </section>
+
+        <footer>
+            <div>
+                <a href="#">
+                    <img src="https://img.icons8.com/ios-glyphs/30/user--v1.png" alt="Mi tarjeta">
+                </a>
+                Mi tarjeta
+            </div>
+            <div>
+                <a href="https://www.assisprev.com.ec/conocenos/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/ios-glyphs/30/web.png" alt="Nosotros">
+                </a>
+                Nosotros
+            </div>
+            <div>
+                <a href="https://www.assisprev.com.ec/contactos/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/ios-filled/50/city-buildings.png" alt="Sucursales">
+                </a>
+                Sucursales
+            </div>
+            <div>
+                <a href="https://www.assisprev.com.ec/contactos/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/ios-filled/50/link--v1.png" alt="Links">
+                </a>
+                Links
+            </div>
+        </footer>
+    </main>
+
+    <script src="colaborador.js"></script>
+
+    <script>
+        // Obtener el ID del empleado desde la URL
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+
+        // Buscar el empleado en la lista
+        const empleado = empleados.find(emp => emp.id === id);
+
+        if (empleado) {
+            document.querySelector(".contenido h1").textContent = empleado.nombre;
+            document.querySelector(".contenido h2").textContent = empleado.puesto;
+            document.querySelector(".contenido p").innerHTML = `
+
+                <img src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/32/external-delivery-pin-for-parcel-delivery-location-making-delivery-tritone-tal-revivo.png" 
+                    alt="Ubicación" style="vertical-align: middle; margin-right: 5px;">
+                ${empleado.ubicacion}
+            `;
+            document.querySelector(".header img").src = empleado.foto;
+            document.querySelectorAll(".botones-contacto a")[0].href = `https://wa.me/${empleado.whatsapp}`;
+            document.querySelectorAll(".botones-contacto a")[1].href = `tel:${empleado.telefono}`;
+            document.querySelectorAll(".botones-contacto a")[2].href = `mailto:${empleado.email}`;
+            document.querySelectorAll(".botones-contacto a")[3].href = `tel:${empleado.movil}`;
+            
+            // Función para crear y descargar el archivo vCard
+            document.getElementById("guardarContacto").addEventListener("click", function() {
+                let vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:${empleado.nombre}
+TEL:${empleado.telefono}
+EMAIL:${empleado.email}
+ADR:${empleado.ubicacion}
+TEL:${empleado.movil}
+END:VCARD`;
+
+                // Crear un blob con el contenido del archivo vCard
+                let blob = new Blob([vCardData], { type: 'text/vcard' });
+
+                // Crear un enlace para descargar el archivo vCard
+                let link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = `${empleado.nombre.replace(" ", "_")}_contacto.vcf`;  // El nombre del archivo será el nombre del empleado
+                link.click();  // Simular un clic en el enlace para descargar el archivo
+            });
+        } else {
+            document.querySelector(".contenido").innerHTML = "<h2>Empleado no encontrado</h2>";
+        }
+
+        // Script para compartir en WhatsApp
+        document.getElementById("compartirWhatsapp").addEventListener("click", function() {
+            const urlTarjeta = window.location.href;  // Obtener la URL actual de la tarjeta
+            const mensaje = `¡Mira esta tarjeta de presentación! ${urlTarjeta}`;
+            const whatsappURL = `https://wa.me/?text=${encodeURIComponent(mensaje)}`;  // Crear la URL para WhatsApp
+
+            // Abrir WhatsApp con el mensaje
+            window.open(whatsappURL, "_blank");
+        });
+    </script>
+</body>
+</html>
