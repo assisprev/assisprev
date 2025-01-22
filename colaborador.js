@@ -477,7 +477,7 @@ const empleados = [
         nombre: "Karen Belén Zambrano Intriago",
         puesto: "Analista de Servicio al Cliente I",
         ubicacion: "Quito, Ecuador",
-        foto: "Servicio al cliente/ZAMBRANO.JPG",
+        foto: "Servicio al Cliente/ZAMBRANO.JPG",
         whatsapp: "5930992806543",
         telefono: "+593023824600",
         email: "karen.zambrano@assisprev.com.ec",
